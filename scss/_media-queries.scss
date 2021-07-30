@@ -1,0 +1,13 @@
+// téléphones
+@mixin xs {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+// téléphone et tablette 
+@mixin sm {
+    @media(max-width: 767px) {
+        @content;
+    }
+}

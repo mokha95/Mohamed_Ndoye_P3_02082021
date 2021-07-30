@@ -1,0 +1,86 @@
+// on import les partials pour pouvoir les utiliser ici
+@import "media-queries";
+@import "base";
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    @include xs {
+        h1 {
+            font-family: var(--font-family-s);
+            text-align: center;
+            // font-size: 2rem;
+        }
+    }
+}
+
+main {
+    box-sizing: border-box;
+}
+
+.maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4e4;
+    box-shadow: 0px -5px 5px 0px #dddddd;
+}
+
+@include xs {
+    .maps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & i {
+        align-items: center;
+    }
+    & input {
+        border: none;
+        background-color: #e4e4e4;
+        font-size: 1rem;
+        padding: 19px 4px 19px 4px;
+        text-align: center;
+        width: 150px;
+    }
+}
+
+.reservation {
+    background: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+    & h2 {
+        margin-top: 0;
+    }
+    background-color: #f6f6f6;
+    & button.btn {
+        background: linear-gradient(to left, #9356dc, #ad3fe1, #cf64dc, #ba53af, #8d51d5);
+        font-weight: bold;
+        color: white;
+        border-radius: 50px;
+        padding: 10px;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0px 3px 7px -3px #4e4e4e;
+    }
+    @include xs {
+        .reservation {
+            h2 {
+                font-weight: bold;
+            }
+        }
+        & button.btn {
+            padding: 10px;
+            color: white;
+            border-radius: 50px;
+            border: none;
+        }
+    }
+}
