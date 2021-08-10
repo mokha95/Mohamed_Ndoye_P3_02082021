@@ -1,0 +1,8 @@
+.change {
+    color: red;
+    cursor: pointer;
+}
+
+&:hover {
+    animation: change 0.4s ease-in-out;
+}

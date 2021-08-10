@@ -1,0 +1,15 @@
+// dans le fichier reset on suprimme certains styles par défaul css 
+* {
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
