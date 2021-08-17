@@ -4,7 +4,9 @@ body {
 
 * {
   list-style: none;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
   font-size: 1rem; }
 
 a {
@@ -123,7 +125,7 @@ li {
   border-radius: 30px;
   padding: 15px;
   color: #fff;
-  width: 50%;
+  width: 25%;
   text-align: center;
   margin: auto;
   margin-bottom: 12%;
@@ -199,7 +201,7 @@ main {
     margin-left: 15px;
     margin-right: 15px;
     text-align: center; }
-  .reservation button.btn {
+  .reservation button.btn__apropos {
     font-size: 14px;
     cursor: pointer;
     background: linear-gradient(to left, #9356dc, #ad3fe1, #cf64dc, #ba53af, #8d51d5);
@@ -211,13 +213,13 @@ main {
     border-radius: 50px;
     border: none;
     box-shadow: 0px 3px 7px -3px #4e4e4e; }
-  .reservation button.btn:hover {
+  .reservation button.btn__apropos:hover {
     box-shadow: 5px 5px 7px grey;
     background: linear-gradient(to left, #a174d8, #b771d8, #cd78d6, #b66bae, #9e74d1); }
   @media (max-width: 480px) {
     .reservation .reservation h2 {
       font-weight: bold; }
-    .reservation button.btn {
+    .reservation button.btn__apropos {
       padding: 10px;
       color: white;
       border-radius: 50px;
@@ -231,7 +233,7 @@ main {
 .fonctionnement .fonctionnement {
   margin-left: 20px; }
 
-.fonctionnement .card {
+.fonctionnement .card__carte {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -242,13 +244,13 @@ main {
   padding: 25px;
   margin: 15px 20px 16px 30px; }
 
-.fonctionnement .card:hover {
+.fonctionnement .card__carte:hover {
   background-color: #eae3f3; }
 
 .fonctionnement h2 {
   margin-left: 20px; }
 
-.fonctionnement .numero {
+.fonctionnement .numero__carte {
   margin-left: -44px;
   margin-right: 20px;
   background-color: #8d51d5;
@@ -271,7 +273,7 @@ main {
 @media (max-width: 480px) {
   .fonctionnement .fonctionnement {
     margin-left: 20px; }
-  .fonctionnement .card {
+  .fonctionnement .card__carte {
     max-width: 80%;
     display: flex;
     align-items: center;
@@ -284,7 +286,7 @@ main {
     margin: 15px 20px 15px 30px; }
   .fonctionnement h2 {
     margin-left: 20px; }
-  .fonctionnement .numero {
+  .fonctionnement .numero__carte {
     margin-left: -44px;
     margin-right: 20px;
     background-color: #8d51d5;
@@ -299,22 +301,42 @@ main {
     color: grey;
     font-size: 20px; } }
 
-.restaurant .menu-restaurant {
+@media (min-width: 768px) and (max-width: 979px) {
+  .fonctionnement .liste__fonctionnement {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; } }
+
+@media (min-width: 980px) and (max-width: 1600px) {
+  section .fonctionnement {
+    margin-bottom: 5%; }
+  .liste__fonctionnement {
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; } }
+
+.restaurant .menu__restaurant {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column; }
 
-.restaurant .restaurant-titre {
+.restaurant .restaurant__titre {
   padding: 30px 0px 0px 10px; }
 
-.restaurant .page-restaurant {
+.restaurant .page__restaurant {
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
   margin: 20px;
   position: relative;
   background: #fff; }
 
-.restaurant .page-restaurant .new {
+.restaurant .page__restaurant .nouveau {
   position: absolute;
   right: 1%;
   top: 5%;
@@ -323,7 +345,7 @@ main {
   border: 4px solid #99e2d0;
   border-radius: 5px; }
 
-.restaurant .page-restaurant img {
+.restaurant .page__restaurant img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -331,7 +353,7 @@ main {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px; }
 
-.restaurant .page-restaurant figcaption {
+.restaurant .page__restaurant figcaption {
   margin: 0;
   padding: 11px; }
 
@@ -359,19 +381,19 @@ main {
   font-weight: bold; }
 
 @media (max-width: 480px) {
-  .restaurant .menu-restaurant {
+  .restaurant .menu__restaurant {
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column; }
-  .restaurant .restaurant-titre {
+  .restaurant .restaurant__titre {
     padding: 30px 0px 0px 10px; }
-  .restaurant .page-restaurant {
+  .restaurant .page__restaurant {
     border-radius: 25px;
     box-shadow: 4px 4px 6px #aaa;
     margin: 20px;
     position: relative;
     background: #fff; }
-  .restaurant .page-restaurant .new {
+  .restaurant .page__restaurant .nouveau {
     position: absolute;
     right: 1%;
     top: 5%;
@@ -379,14 +401,14 @@ main {
     background: #99e2d0;
     border: 4px solid #99e2d0;
     border-radius: 5px; }
-  .restaurant .page-restaurant img {
+  .restaurant .page__restaurantimg {
     width: 100%;
     height: 100%;
     object-fit: cover;
     max-height: 220px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px; }
-  .restaurant .page-restaurant figcaption {
+  .restaurant .page__restaurant figcaption {
     margin: 0;
     padding: 11px; }
   .restaurant figure {
@@ -396,6 +418,26 @@ main {
     align-items: center;
     justify-content: space-between;
     max-height: 25px; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .restaurant .restaurant__titre {
+    display: none; }
+  .restaurant .menu__restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px; } }
+
+@media (min-width: 980px) and (max-width: 1600px) {
+  .restaurant .restaurant__titre {
+    display: none; }
+  .restaurant .menu__restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 15px; } }
 
 footer {
   display: block;
@@ -429,3 +471,21 @@ footer {
     footer .fas {
       font-weight: 900;
       margin-right: 10px; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    footer footer,
+    footer h3 {
+      text-align: center; }
+    footer footer,
+    footer ul {
+      align-items: center;
+      text-align: center;
+      justify-content: center; } }
+  @media (min-width: 980px) and (max-width: 1600px) {
+    footer footer,
+    footer h3 {
+      text-align: center; }
+    footer footer,
+    footer ul {
+      align-items: center;
+      text-align: center;
+      justify-content: center; } }
