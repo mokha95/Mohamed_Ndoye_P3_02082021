@@ -21,13 +21,7 @@
 
 // version pc
 @mixin xl {
-    @media (min-width: 980px) and (max-width: 1600px) {
+    @media (min-width: 980px) and (max-width: 2000px) {
         @content;
     }
 }
-
-// @mixin xll {
-//     @media (min-width: 1201px) and (max-width: 1440px) {
-//         @content;
-//     }
-// }

@@ -1,5 +1,5 @@
     // @import "reset";
-    .header-page2 {
+    .header__page2 {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -24,7 +24,7 @@
         h3 {
             margin: 0;
         }
-        .coeur {
+        .coeur__coeur {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -44,27 +44,32 @@
             -webkit-text-fill-color: transparent;
             font-weight: bold;
         }
-        .la-palette-du-gout {
+        .la__palettedugout {
             margin-top: -21px;
             background-color: #f6f6f6;
             border-radius: 20px 20px 0px 0px;
             position: relative;
         }
+        @include xl {}
     }
     
     // titre
-    .tittre-trait {
+    .tittre__trait {
         margin-left: 20px;
     }
     
-    .tit {
+    .tit__tit {
         text-transform: uppercase;
         border-bottom: 4px solid var(--tertiaire);
         width: 40px;
         padding-bottom: 5px;
     }
     
-    .entrée {
+    .chargement {
+        animation: fadein 3s ease-in-out;
+    }
+    
+    .entrée__entrée {
         background-color: #fff;
         border-radius: 15px;
         margin: 10px;
@@ -78,11 +83,11 @@
         transition: padding-right 450ms ease-in-out;
     }
     
-    .entrée:hover {
+    .entrée__entrée:hover {
         padding-right: 75px;
     }
     
-    .entrée:hover .validation {
+    .entrée__entrée:hover .validation {
         opacity: 1;
         transform: translate(-50px);
     }
@@ -91,26 +96,28 @@
         transform: rotate(360deg);
     }
     
-    .entrée:hover .prix {
+    .entrée__entrée:hover .prix__total {
         font-weight: bold;
     }
     
-    .alignement {
+    .entrée__entrée:hover {
+        padding-right: 73px;
+    }
+    
+    .alignement__alignement {
         display: flex;
         justify-content: space-between;
         align-items: center;
         line-height: 1.5em;
     }
     
-    .alignement p {
+    .alignement__alignement p {
         margin: 0;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
     
-    // .alignement p {
-    // }
     .validation {
         display: flex;
         justify-content: center;
@@ -125,10 +132,6 @@
         opacity: 0;
         right: -50px;
         transition: transform 332ms ease-in-out;
-    }
-    
-    .entrée:hover {
-        padding-right: 73px;
     }
     
     .validation .fa-check-circle {

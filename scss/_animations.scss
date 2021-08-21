@@ -1,8 +1,68 @@
-.change {
-    color: red;
-    cursor: pointer;
+@keyframes lancement {
+    0% {
+        opacity: 0;
+        z-index: -1;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        z-index: 0;
+        transform: translateY(0);
+    }
 }
 
-&:hover {
-    animation: change 0.4s ease-in-out;
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes pivote {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes lancement {
+    0% {
+        opacity: 0;
+        z-index: -1;
+        transform: translateY(1rem);
+    }
+    100% {
+        opacity: 1;
+        z-index: 0;
+        transform: translateY(0);
+    }
+}
+
+@keyframes changement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-4rem);
+    }
+}
+
+@keyframes rond {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-0.5rem);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

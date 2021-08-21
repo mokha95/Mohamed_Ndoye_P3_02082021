@@ -11,7 +11,7 @@
         width: 100vw;
         background-color: rgb(245, 221, 245);
         animation: loader 0.01s;
-        animation-delay: 1.75s;
+        animation-delay: 1.72s;
         animation-fill-mode: both;
     }
     &__content {
@@ -21,8 +21,8 @@
         width: 120px;
     }
     &__piece {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 2rem;
+        width: 2rem;
         border-radius: 1rem;
         animation: rond 1s;
         animation-iteration-count: 1;
