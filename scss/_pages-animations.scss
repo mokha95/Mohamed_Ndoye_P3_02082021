@@ -1,0 +1,23 @@
+.lancement {
+    animation: fadein 2s ease-in-out;
+}
+
+.plat {
+    animation: fadein 4s ease-in-out;
+}
+
+.desserts {
+    animation: fadein 6s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    // 50% {
+    //     opacity: 0;
+    // }
+    100% {
+        opacity: 1;
+    }
+}
