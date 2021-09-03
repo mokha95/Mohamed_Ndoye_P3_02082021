@@ -12,6 +12,8 @@
         background-color: rgb(245, 221, 245);
         animation: loader 0.01s;
         animation-delay: 1.72s;
+        // animation fill mode Cette propriété indique les valeurs 
+        // qui doivent être appliquées aux propriétés avant et après l'exécution de l'animation.
         animation-fill-mode: both;
     }
     &__content {
@@ -25,6 +27,7 @@
         width: 2rem;
         border-radius: 1rem;
         animation: rond 1s;
+        // iteration count est le nombre de fois que l 'animation est répété
         animation-iteration-count: 1;
         &--a {
             background: var(--secondaire);
@@ -39,3 +42,9 @@
         }
     }
 }
+
+// La animation-fill-modepropriété spécifie un style pour l'élément cible 
+// lorsque l'animation n'est pas en cours de lecture 
+// (avant qu'elle ne démarre, après sa fin, ou les deux).
+// both - L'animation suivra les règles pour l'avant et l'arrière,
+// étendant les propriétés de l'animation dans les deux sens
