@@ -62,6 +62,19 @@ li {
   border-radius: 20px 20px 0px 0px;
   position: relative; }
 
+@media (min-width: 1275px) and (max-width: 2000px) {
+  .menu .flex__menu {
+    display: flex;
+    justify-content: space-around; }
+  .menu .food__menu {
+    width: 402px; }
+  .menu .plat {
+    width: 402px; }
+  .menu .desserts {
+    width: 402px; }
+  .menu .alignement__alignement p {
+    padding-right: 21px; } }
+
 .tittre__trait {
   margin-left: 20px; }
 
@@ -94,7 +107,7 @@ li {
   opacity: 1;
   transform: translate(-50px); }
 
-.entrée:hover .fa-check-circle {
+.entrée__entrée:hover .fa-check-circle {
   transform: rotate(360deg); }
 
 .entrée__entrée:hover .prix__total {
@@ -114,6 +127,9 @@ li {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden; }
+
+.prix__total {
+  margin-right: 5px; }
 
 .validation {
   display: flex;
@@ -147,7 +163,8 @@ li {
   text-align: center;
   margin: auto;
   margin-bottom: 12%;
-  box-shadow: 0px 3px 7px -3px #4e4e4e; }
+  box-shadow: 0px 3px 7px -3px #4e4e4e;
+  margin-top: 6%; }
 
 .buttons:hover {
   box-shadow: 5px 5px 7px grey;
